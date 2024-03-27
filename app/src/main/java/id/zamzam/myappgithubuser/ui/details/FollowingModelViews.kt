@@ -18,7 +18,7 @@ class FollowingModelViews: ViewModel() {
 //        ApiConfig.apiInstance
         //        ApiConfig.apiInstance
         val client = ApiConfig.getApiService()
-            .getFollowers(username)
+            .getFollowing(username)
         client.enqueue(object : Callback<ArrayList<UserItem>>{
 //            .enqueue(object : Callback<ArrayList<UserItem>> {
                 override fun onResponse(
