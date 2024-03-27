@@ -15,9 +15,12 @@ class FollowersModelViews: ViewModel() {
     val listFollowers = MutableLiveData<ArrayList<UserItem>>()
 
     fun setListFollowers(username: String) {
+//        ApiConfig.apiInstance
+        //        ApiConfig.apiInstance
         val client = ApiConfig.getApiService()
             .getFollowers(username)
         client.enqueue(object : Callback<ArrayList<UserItem>>{
+            //            .enqueue(object : Callback<ArrayList<UserItem>> {
 
                 override fun onResponse(
                     call: Call<ArrayList<UserItem>>,

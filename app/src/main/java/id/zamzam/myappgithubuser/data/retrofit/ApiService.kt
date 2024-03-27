@@ -14,6 +14,7 @@ interface ApiService {
 //    token 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
 
     @GET("search/users")
+//    @GET("search/users?q")
     @Headers("Authorization: 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")
     fun getUsers(
         @Query("q") username: String
