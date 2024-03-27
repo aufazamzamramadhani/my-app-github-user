@@ -15,12 +15,9 @@ class DetailUserViewModel: ViewModel() {
     val user = MutableLiveData<DetailUsers>()
 
     fun setDetailUser(username: String){
-//        ApiConfig.apiInstance
-        //        ApiConfig.apiInstance
         val client = ApiConfig.getApiService()
             .getDetailUser(username)
         client.enqueue(object : Callback<DetailUsers>{
-//            .enqueue(object : Callback<DetailUsers> {
 
                 override fun onResponse(call: Call<DetailUsers>, response: Response<DetailUsers>) {
                     if (response.isSuccessful){

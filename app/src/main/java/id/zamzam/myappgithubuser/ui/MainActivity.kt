@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (savedInstanceState==null)
-                setUserData("aufazamzamramadhani")
+                setUserData("aufaza")
             rvQuery.setOnKeyListener { view, a, event ->
                 if (event.action == KeyEvent.ACTION_DOWN && a == KeyEvent.KEYCODE_ENTER){
                     setUserData()
