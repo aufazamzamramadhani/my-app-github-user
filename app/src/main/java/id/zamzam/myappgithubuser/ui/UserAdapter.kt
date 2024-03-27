@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import id.zamzam.myappgithubuser.data.response.UserItem
 import id.zamzam.myappgithubuser.databinding.UserLayoutBinding
 
@@ -30,7 +29,6 @@ class   UserAdapter : RecyclerView.Adapter<UserAdapter.MyViewHolder>() {
             binding.apply {
                 Glide.with(itemView)
                     .load(user.avatarUrl)
-                    .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(ccUser)
                 tvUsername.text = user.login

@@ -5,7 +5,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import id.zamzam.myappgithubuser.databinding.ActivityDetailUserBinding
 
 class DetailUserActivity : AppCompatActivity() {
@@ -42,7 +41,6 @@ class DetailUserActivity : AppCompatActivity() {
                     tvFollowing.text = "${it.following} Following"
                     Glide.with(this@DetailUserActivity)
                         .load(it.avatarUrl)
-                        .transition(DrawableTransitionOptions.withCrossFade())
                         .centerCrop()
                         .into(imageProfile)
                 }
