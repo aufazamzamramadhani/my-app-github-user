@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyAppGithubUser</string>
+
+    <string name="username">Username</string>
+    <string name="searchbar_hint">Masukan Kata</string>
+    <string name="followers_tab">Followers</string>
+    <string name="following_tab">Following</string>
+    <string name="followers_count">Followers</string>
+    <string name="following_count">Following</string>
+    <string name="search_hint">Masukan Username</string>
+</resources>
